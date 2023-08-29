@@ -54,6 +54,7 @@ body {
   header {
     height: 150px;
     margin-bottom: 90px;
+    text-align: center;
   }
   header .encabezado {
     display: flex;
@@ -91,6 +92,25 @@ body {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
+  }
+  header form {
+    margin: 20px 0 20px 0;
+  }
+  header form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+  }
+  header form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(114, 153, 163);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
 }
 a {
@@ -274,7 +294,6 @@ footer a {
     height: 65%;
     margin-top: 25px;
     border-radius: 10px;
-    border: solid #e65e5e 5px;
   }
   section article h3 {
     font-size: 25px;
@@ -318,6 +337,9 @@ footer a {
     border-radius: 0 0 5px 5px;
     box-shadow: 0 2px 7PX black;
     letter-spacing: 2px;
+  }
+  main {
+    margin-top: 130px;
   }
   main h2 {
     font-family: "Bitter", serif;

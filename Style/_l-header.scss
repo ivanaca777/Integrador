@@ -1,5 +1,7 @@
 @charset'UTF-8';
 
+@import '_h-colores.scss';
+
 @media (max-width: 720px ){
 
     .encabezado {
@@ -61,6 +63,7 @@
     header {
         height: 150px;
         margin-bottom: 90px;
+        text-align: center;
         .encabezado {
             display: flex;
             flex-direction: row;
@@ -83,7 +86,7 @@
         .menu {
             display: flex;
             flex-direction: row;
-            background-color:  rgb(114, 153, 163);
+            background-color:  $gray3;
             align-items: center;
             justify-content: center;
             padding: 5px 0 5px 0;
@@ -104,6 +107,29 @@
                 text-decoration: none;
             }
         }
+        
+        form {
+            margin: 20px 0 20px 0;
+
+            input {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 300px;
+            }
+    
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: $gray3;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+        
     }    
 }
 
