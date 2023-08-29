@@ -1,0 +1,131 @@
+@charset'UTF-8';
+
+@media (max-width: 720px ){
+
+    .encabezado {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(145, 194, 206);
+        margin: 0;
+    
+        img {
+            margin: 1%;
+            margin-left: 17%;
+            width: 50%;
+    
+        }
+
+        .barra {
+            display: block;
+            margin-left:  9%;
+    
+            & i {
+                font-size: 40px;
+            }
+            
+        }
+    } 
+    
+    .menu {
+        display: none;
+        background-color:  rgb(145, 194, 206);
+        flex-direction: column;
+        width: 40%;
+        height: 132px;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px 0px 60% ;
+        padding: 5px 0 5px 0;
+
+
+        & li {
+            height: 25%;
+        }
+
+        & a {
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: 721px ){
+
+    header {
+        height: 150px;
+        margin-bottom: 90px;
+        .encabezado {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(145, 194, 206);
+            margin: 0;
+        
+            img {
+                height: 90%;    
+            }
+    
+            .barra {
+                display: none;
+            }
+        } 
+        
+        .menu {
+            display: flex;
+            flex-direction: row;
+            background-color:  rgb(114, 153, 163);
+            align-items: center;
+            justify-content: center;
+            padding: 5px 0 5px 0;
+            margin: 0 ;
+            width: 100%;
+            gap: 15%;
+    
+    
+            & li {
+                height: 25%;
+            }
+    
+            & a {
+                height: 100%;
+                font-family: 'Inter', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-left: 0px;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    margin-left: 5%;
+    padding: 0;
+    width: 30%;
+
+    & li {
+        list-style: none;
+        
+        & a {
+            text-decoration: none;
+            color: black;
+        }
+    }    
+}

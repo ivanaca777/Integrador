@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Bebas+Neue&family=Bitter:wght@400;500;600&family=Inter&family=Lobster&family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Quicksand:wght@400;700&display=swap");
+body {
+  margin: 0;
+  background-color: rgb(213, 223, 223);
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  .encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(145, 194, 206);
+    margin: 0;
+  }
+  .encabezado img {
+    margin: 1%;
+    margin-left: 17%;
+    width: 50%;
+  }
+  .encabezado .barra {
+    display: block;
+    margin-left: 9%;
+  }
+  .encabezado .barra i {
+    font-size: 40px;
+  }
+  .menu {
+    display: none;
+    background-color: rgb(145, 194, 206);
+    flex-direction: column;
+    width: 40%;
+    height: 132px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 0px 60%;
+    padding: 5px 0 5px 0;
+  }
+  .menu li {
+    height: 25%;
+  }
+  .menu a {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+@media (min-width: 721px) {
+  header {
+    height: 150px;
+    margin-bottom: 90px;
+  }
+  header .encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(145, 194, 206);
+    margin: 0;
+  }
+  header .encabezado img {
+    height: 90%;
+  }
+  header .encabezado .barra {
+    display: none;
+  }
+  header .menu {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(114, 153, 163);
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+    margin: 0;
+    width: 100%;
+    gap: 15%;
+  }
+  header .menu li {
+    height: 25%;
+  }
+  header .menu a {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding-left: 0px;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+  margin-left: 5%;
+  padding: 0;
+  width: 30%;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  height: 105px;
+  background-color: rgb(52, 53, 53);
+  color: #D5DFDF;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+footer p {
+  font-size: 12px;
+  margin: 30px 0 10px 0;
+  width: 90%;
+}
+footer a {
+  text-decoration: none;
+  color: #91C2CE;
+  font-size: 18px;
+}
+
+@media (max-width: 720px) {
+  section {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  section article {
+    border-radius: 20px;
+    background-color: #cddac7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 15px black;
+  }
+  section article img {
+    width: 80%;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: solid #e65e5e 5px;
+  }
+  section article h3 {
+    font-size: 25px;
+    color: black;
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: center;
+    font-family: "Bitter", serif;
+    width: 90%;
+  }
+  section article div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  section article div p {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 12px;
+    padding: 5px;
+    font-family: "Bitter", serif;
+    text-align: center;
+    color: rgb(38, 156, 38);
+  }
+  section article div .boton {
+    display: flex;
+    background-color: #a439c2;
+    font-weight: bolder;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 8px 0 5px 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 7PX black;
+    letter-spacing: 2px;
+  }
+  section article .datos {
+    margin: 0;
+  }
+  main {
+    margin: 10%;
+  }
+  main h2 {
+    font-family: "Bitter", serif;
+  }
+  main p {
+    font-family: "Inter", sans-serif;
+  }
+  main form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main form label input {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  main form label .descripcion {
+    height: 90px;
+    width: 100%;
+  }
+  main form label select {
+    width: 50%;
+    margin-top: 5px;
+  }
+  main form label select option {
+    background-color: rgb(213, 223, 223);
+    font-size: 16px;
+  }
+  main form .escala {
+    display: flex;
+    flex-direction: row;
+  }
+  main form .escala label {
+    width: 5%;
+    margin: 0 0 0 10%;
+    padding: 0;
+  }
+  main form .escala .radio {
+    width: 5%;
+    margin: 0 0 0 20px;
+  }
+  main form .enviar {
+    width: 20%;
+    margin-left: 40%;
+  }
+  main form .agregar {
+    width: 100px;
+    margin-left: 40%;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 721px) {
+  section {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  section article {
+    border-radius: 20px;
+    background-color: #cddac7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 15px black;
+    width: 310px;
+  }
+  section article img {
+    width: 80%;
+    height: 65%;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: solid #e65e5e 5px;
+  }
+  section article h3 {
+    font-size: 25px;
+    color: black;
+    font-weight: 900;
+    margin: 20px 10px 0px 10px;
+    text-decoration: underline;
+    text-align: center;
+    align-items: center;
+    font-family: "Bitter", serif;
+    width: 90%;
+    height: 50px;
+  }
+  section article .datos {
+    margin: 20px 0 0 0;
+  }
+  section article div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  section article div p {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 12px;
+    padding: 5px;
+    font-family: "Bitter", serif;
+    text-align: center;
+    color: rgb(38, 156, 38);
+  }
+  section article div .boton {
+    display: flex;
+    background-color: #a439c2;
+    font-weight: bolder;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 8px 0 5px 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 7PX black;
+    letter-spacing: 2px;
+  }
+  main h2 {
+    font-family: "Bitter", serif;
+    text-align: center;
+    font-size: 32px;
+  }
+  main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  main form label {
+    width: 400px;
+  }
+  main form label input {
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  main form label .descripcion {
+    height: 200px;
+    width: 100%;
+  }
+  main form label select {
+    width: 50%;
+    margin-top: 5px;
+  }
+  main form label select option {
+    background-color: rgb(213, 223, 223);
+    font-size: 16px;
+  }
+  main form .escala {
+    display: flex;
+    flex-direction: row;
+  }
+  main form .escala label {
+    width: 5%;
+    margin: 0 0 0 50px;
+    padding: 0;
+  }
+  main form .escala .radio {
+    width: 5%;
+    margin: 0 0 0 12px;
+  }
+  main form .enviar {
+    width: 130px;
+    margin-top: 20px;
+  }
+  main form .agregar {
+    width: 130px;
+    margin-top: 20px;
+  }
+  .principalc {
+    margin-bottom: 5%;
+  }
+  .principalc p {
+    width: 50%;
+    font-family: "Inter", sans-serif;
+    margin: 0 0 50px 25%;
+  }
+  .principala {
+    margin-bottom: 4%;
+  }
+  .principala p {
+    width: 50%;
+    font-family: "Inter", sans-serif;
+    margin: 0 0 50px 25%;
+  }
+  .principaln {
+    margin-bottom: 20%;
+  }
+  .principaln p {
+    width: 60%;
+    font-family: "Inter", sans-serif;
+    margin: 0 0 50px 20%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

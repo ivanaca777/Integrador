@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iván Castro">
+    <meta name="copyright" content="Ref. to author | Todos los derechos reservados">
+    <meta name="description" content="La mejor tienda de argentina para comprar figuras coleccionables de tus series y películas favoritas">
+    <meta name="keywords" content="Figuras, Hot toys, coleccionable, coleccion">
+    <link rel="stylesheet" href="/main.css" type="text/css">
+    <script src="../script.js"></script>
+    <title>Hobbies - Nosotros</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="../Src/Images/hobbies-final.png" alt="logo de la tienda con nombre hobbies">
+            <a href="javascript:void(0);" onclick="openMenu()" class="barra"><i class="fa fa-bars"></i></a>    
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="alta.html">Alta</a></li>
+            <li><a href="contacto.html">Contacto</a></li>            
+            <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </header>
+
+    <main class="principala">
+        <h2>Agregar producto nuevo</h3>
+        <form action="">
+            <label class="label" for="personaje">Nombre personaje:<input name="personaje" type="text"/></label>
+        
+            <label class="label" for="franquicia">Franquicia/Serie:<input name="franquicia" type="text"/></label>
+            
+            <label class="escala" for="escala">Escala:
+                <label for="escalas">1/5</label><input class="radio" name="escala" type="radio"/>
+                <label for="escalas">1/10</label><input class="radio" name="escala" type="radio"/>
+                <label for="escalas">1/20</label><input class="radio" name="escala" type="radio"/>
+            </label>
+
+            <label class="label" for="precio">Precio:<input name="precio" type="text"/></label> 
+        
+            <label class="label" for="descripcion">Descripción:<input class="descripcion" name="descripcion" type="text"/></label>        
+        
+            <label class="label" for="imagen">Imagen:<input name="imagen" type="file" accept="image/*"/></label>
+
+            <input class="agregar" type="submit" value="Agregar">
+        </form>
+    </main>
+
+    <footer>
+        <p>Debido a la naturaleza puramente coleccionista de nuestros productos y de la existencia de algunas piezas o accesorios que los acompañan se recomienda mantener a los mismos fuera del alcance de niños menores a 6 años.</p>
+        <a href="contacto.html">
+            Contactanos!
+        </a>
+    </footer>   
+    <script src="https://kit.fontawesome.com/eb26cc3c54.js" crossorigin="anonymous"></script> 
+</body>
+</html>
