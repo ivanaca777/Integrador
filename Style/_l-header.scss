@@ -4,56 +4,81 @@
 
 @media (max-width: 720px ){
 
-    .encabezado {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        background-color: rgb(145, 194, 206);
-        margin: 0;
-    
-        img {
-            margin: 1%;
-            margin-left: 17%;
-            width: 50%;
-    
-        }
-
-        .barra {
-            display: block;
-            margin-left:  9%;
-    
-            & i {
-                font-size: 40px;
+    header {
+        text-align: center;
+        .encabezado {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(145, 194, 206);
+            margin: 0;
+        
+            img {
+                margin: 1%;
+                margin-left: 17%;
+                width: 50%;
+        
             }
-            
-        }
-    } 
     
-    .menu {
-        display: none;
-        background-color:  rgb(145, 194, 206);
-        flex-direction: column;
-        width: 40%;
-        height: 132px;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        margin: 0px 0px 0px 60% ;
-        padding: 5px 0 5px 0;
-
-
-        & li {
-            height: 25%;
+            .barra {
+                display: block;
+                margin-left:  9%;
+        
+                & i {
+                    font-size: 40px;
+                }
+                
+            }
+        } 
+    
+        form {
+            margin: 20px 0 20px 0;
+    
+            input {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 35%;
+            }
+    
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: $gray3;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
         }
-
-        & a {
-            height: 100%;
-            font-family: 'Inter', sans-serif;
-            font-size: 20px;
-            font-weight: 500;
-            text-decoration: underline;
+        
+        .menu {
+            display: none;
+            background-color:  rgb(145, 194, 206);
+            flex-direction: column;
+            width: 40%;
+            height: 132px;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 0px 0px 60% ;
+            padding: 5px 0 5px 0;
+    
+    
+            & li {
+                height: 25%;
+            }
+    
+            & a {
+                height: 100%;
+                font-family: 'Inter', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -64,6 +89,7 @@
         height: 150px;
         margin-bottom: 90px;
         text-align: center;
+
         .encabezado {
             display: flex;
             flex-direction: row;
