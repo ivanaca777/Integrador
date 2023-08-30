@@ -23,20 +23,26 @@ formulario.addEventListener("submit", (event)=>{
 
   let nombre = event.target[0].value;
   let apellido = event.target[1].value;
-  //pide validar nombre con regex, limpiar si lo hace o dar error si no valida 
-  if (validar(nombre)){   
-   nombre = limpiar(nombre);
-  }
-  else {
-    errorNombre.textContent = "Hay caracteres incorrectos o falta completar el campo";
+  //pide validar nombre con regex, limpiar si lo hace o dar error si no valida
+  if (nombre !== ""){
+    if (validar(nombre)){   
+      nombre = limpiar(nombre);
+     }
+     else {
+       errorNombre.textContent = "Hay caracteres incorrectos";
+     }
   }
 
+
   //pide validar apellido con regex, limpiar si lo hace o dar error si no valida
-  if (validar(apellido)){   
-    apellido = limpiar(apellido);
-  }
-  else {
-    errorApellido.textContent = "Hay caracteres incorrectos o falta completar el campo";
+
+  if (apellido !== ""){
+    if (validar(apellido)){   
+      apellido = limpiar(apellido);
+    }
+    else {
+      errorApellido.textContent = "Hay caracteres incorrectos";
+    }
   }
 
   //console.log(nombre,apellido);
@@ -44,12 +50,13 @@ formulario.addEventListener("submit", (event)=>{
 
 function validar(inputValue) {
   let valorLimpio = inputValue.trim();
-  if(valorLimpio.match(regex)) {
-    return true;
-  }
-  else {
-    return false;
-  }  
+
+    if(valorLimpio.match(regex)) {
+      return true;
+    }
+    else {
+      return false;
+    }
 }
 
 function limpiar(inputValue) {
