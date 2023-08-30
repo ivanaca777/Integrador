@@ -8,47 +8,57 @@ function openMenu() {
     }
 }
 
-//let barsButton = document.querySelector(".barra")
+//let formulario = document.querySelector("form");
 
-//barsButton.addEventListener("click", openMenu)
+//regex:
+let regex = /^[A-Za-z]\D*$/gm;
 
-//card:
+//div para el error de nombre
+let errorNombre = document.querySelector('.errorNombre');
 
-class Figura {
-    getHtmlArticle() {
-        return `
-          <article>
-            <h2>${this.titulo}</h2>
-            <h3><span class="de">de</span> ${this.autor}</h3>
-    
-            <div class="informacion">
-              <a href="img/${this.foto}" title="Presioná para ver la imagen en tamaño grande" target="_blank">
-                <img src="img/${this.foto}" alt="Portada de ${this.titulo}">
-              </a>
-              <p>
-                <span>Precio:</span>
-                <span>${this.precio}</span>
-              </p>
-              <p>
-                <span title="International Standard Book Number">ISBN:</span>
-                <span>${this.isbn}</span>
-              </p>
-              <p>
-                <span>Páginas:</span>
-                <span>${this.paginas}</span>
-              </p>
-              <p>
-                <span>Idioma:</span>
-                <span>${this.idioma}</span>
-              </p>
-            </div>
-            <div class="sinopsis">
-              <p>${this.sinopsis}</p>
-            </div>
-            <div class="gradiente-blanco"></div>
-          </article>
-        `;
-      };
+formulario.addEventListener("submit", (event)=>{
+  event.preventDefault();
+
+  let nombre = event.target[0].value;
+  let apellido = event.target[1].value;
+
+  nombre = validar(nombre);
+  nombre = limpiar(nombre);
+  apellido = validar(apellido)
+  apellido = limpiar(apellido);
+  console.log(nombre,apellido);
+});
+
+function validar(inputValue) {
+  let valorLimpio = inputValue.trim();
+
+  if(valorLimpio.match(regex)) {
+    return valorLimpio
+  }
+  else {
+    errorNombre.textContent = "Hay caracteres incorrectos";
+  }
 }
 
-///^[A-Z]\D*$/gm regex
+function limpiar(inputValue) {
+  let valorLimpio = inputValue.trim();
+
+  if(valorLimpio[0] === valorLimpio[0].toUpperCase()) {
+    return valorLimpio
+  }
+  
+  else {
+    let valorReconstruido = "";
+    for(let i = 0; i < valorLimpio.length; i++){
+      if(i == 0) {
+        valorReconstruido += valorLimpio[i].toUpperCase();
+      }
+      else {
+        valorReconstruido += valorLimpio[i].toLowerCase();
+      }
+    }
+    return valorReconstruido;
+  }
+}
+
+

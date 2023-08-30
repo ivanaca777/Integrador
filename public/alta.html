@@ -9,7 +9,6 @@
     <meta name="description" content="La mejor tienda de argentina para comprar figuras coleccionables de tus series y películas favoritas">
     <meta name="keywords" content="Figuras, Hot toys, coleccionable, coleccion">
     <link rel="stylesheet" href="/main.css" type="text/css">
-    <script src="../script.js"></script>
     <title>Hobbies - Nosotros</title>
 </head>
 <body>
@@ -37,6 +36,8 @@
             <label class="label" for="personaje">Nombre personaje:<input name="personaje" type="text"/></label>
         
             <label class="label" for="franquicia">Franquicia/Serie:<input name="franquicia" type="text"/></label>
+
+            <label class="label" for="marca">Marca:<input name="marca" type="text"/></label>
             
             <label class="escala" for="escala">Escala:
                 <label for="escalas">1/5</label><input class="radio" name="escala" type="radio"/>
@@ -44,9 +45,11 @@
                 <label for="escalas">1/20</label><input class="radio" name="escala" type="radio"/>
             </label>
 
-            <label class="label" for="precio">Precio:<input name="precio" type="text"/></label> 
+            <label class="label" for="precio">Precio:<input name="precio" type="text"/></label>
+
+            <label class="label" for="stock">Unidades agregadas a Stock:<input name="stock" type="text"/></label>
         
-            <label class="label" for="descripcion">Descripción:<input class="descripcion" name="descripcion" type="text"/></label>        
+            <label class="label" for="descripcion">Descripción:<textarea class="descripcion" name="descripcion"></textarea></label>        
         
             <label class="label" for="imagen">Imagen:<input name="imagen" type="file" accept="image/*"/></label>
 
@@ -61,5 +64,6 @@
         </a>
     </footer>   
     <script src="https://kit.fontawesome.com/eb26cc3c54.js" crossorigin="anonymous"></script> 
+    <script src="../script.js"></script>
 </body>
 </html>

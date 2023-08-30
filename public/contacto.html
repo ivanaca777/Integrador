@@ -9,7 +9,6 @@
     <meta name="description" content="La mejor tienda de argentina para comprar figuras coleccionables de tus series y películas favoritas">
     <meta name="keywords" content="Figuras, Hot toys, coleccionable, coleccion">
     <link rel="stylesheet" href="/main.css" type="text/css">
-    <script src="../script.js"></script>
     <title>Hobbies - Nosotros</title>
 </head>
 <body>
@@ -33,23 +32,29 @@
 
     <main class="principalc">
         <h2>Realiza tu consulta:</h3>
-        <form action="">
-            <label class="label" for="Nombre">Nombre:<input name="Nombre" type="text"/></label>
+        <form name="formulario">
+            <label class="label" id="nombre" for="Nombre">Nombre:
+            <input name="Nombre" type="text"/></label>
+            <div class="errorNombre"></div>
         
-            <label class="label" for="Apellido">Apellido:<input name="Apellido" type="text"/></label>
+            <label class="label" for="Apellido">Apellido:
+            <input name="Apellido" type="text"/></label>
 
-            <label class="label" for="Mail">Mail:<input name="Mail" type="text"/></label>
+            <label class="label" for="Mail">Mail:
+            <input name="Mail" type="text" placeholder="ejemplo@gmail.com"/></label>
 
             <label class="label" for="tipo de consulta">Motivo de su consulta:<br>
-                <select name="tipo_de_consulta" class="dropdown-select">
+                <select name="tipoconsulta" class="select">
                     <option value="opcion1">Formas de pago</option>
                     <option value="opcion2">Garantía</option>
                     <option value="opcion3">Productos</option>
                     <option value="opcion3">Envío</option>
+                    <option value="opcion">Otros</option>
                 </select>
             </label>
 
-            <label class="label" for="descripcion">Descripción:<br><textarea class="descripcion" name="descripcion"></textarea></label>
+            <label class="label" for="descripcion">Comentarios:<br>
+            <textarea class="descripcion" name="descripcion"placeholder="Ingrese su mensaje"></textarea></label>
 
             <input class="enviar" type="submit" value="Enviar">
         </form>
@@ -62,5 +67,6 @@
         </a>
     </footer>   
     <script src="https://kit.fontawesome.com/eb26cc3c54.js" crossorigin="anonymous"></script> 
+    <script src="../script.js"></script>
 </body>
 </html>

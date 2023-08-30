@@ -189,16 +189,24 @@ footer a {
     border-radius: 20px;
     background-color: #cddac7;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     box-shadow: 0 5px 15px black;
   }
   section article img {
-    width: 80%;
-    margin-top: 25px;
+    width: 40%;
+    margin: 5% 3% 5% 5%;
     border-radius: 10px;
   }
-  section article h3 {
+  section article div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  section article div h3 {
     font-size: 25px;
     color: black;
     font-weight: 900;
@@ -206,16 +214,12 @@ footer a {
     text-align: center;
     font-family: "Bitter", serif;
     width: 90%;
+    margin: 0;
   }
-  section article div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  section article div p {
+  section article div .precio {
     font-size: 20px;
     font-weight: bolder;
-    margin-top: 12px;
+    margin-top: 10px;
     padding: 5px;
     font-family: "Bitter", serif;
     text-align: center;
@@ -225,8 +229,8 @@ footer a {
     display: flex;
     background-color: #a439c2;
     font-weight: bolder;
-    height: 40px;
-    width: 100%;
+    height: 30px;
+    width: 80%;
     justify-content: center;
     align-items: center;
     color: white;
@@ -234,9 +238,6 @@ footer a {
     border-radius: 0 0 5px 5px;
     box-shadow: 0 2px 7PX black;
     letter-spacing: 2px;
-  }
-  section article .datos {
-    margin: 0;
   }
   main {
     margin: 10%;
@@ -319,11 +320,17 @@ footer a {
     margin-top: 25px;
     border-radius: 10px;
   }
-  section article h3 {
+  section article div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  section article div h3 {
     font-size: 25px;
     color: black;
     font-weight: 900;
-    margin: 20px 10px 0px 10px;
+    margin: 20px 10px 20px 10px;
     text-decoration: underline;
     text-align: center;
     align-items: center;
@@ -331,18 +338,13 @@ footer a {
     width: 90%;
     height: 50px;
   }
-  section article .datos {
-    margin: 20px 0 0 0;
+  section article div .datos {
+    margin: 0;
   }
-  section article div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  section article div p {
+  section article div .precio {
     font-size: 20px;
     font-weight: bolder;
-    margin-top: 12px;
+    margin: 12px 0 12px 0;
     padding: 5px;
     font-family: "Bitter", serif;
     text-align: center;
@@ -385,7 +387,7 @@ footer a {
     justify-content: flex-end;
   }
   main form label .descripcion {
-    height: 200px;
+    height: 150px;
     width: 100%;
   }
   main form label select {

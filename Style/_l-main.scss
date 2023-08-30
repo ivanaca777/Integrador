@@ -13,9 +13,10 @@
             @include card;
         }
     }
-    main {
-        margin: 10%;
     
+    main {  
+        
+        margin: 10%;
         & h2 {
             font-family: 'Bitter', serif;
         }
@@ -125,7 +126,7 @@
                 }
 
                 & .descripcion {
-                    height: 200px;
+                    height: 150px;
                     width: 100%;
                 }
                 
