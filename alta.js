@@ -8,10 +8,10 @@ function openMenu() {
     }
 }
 
+
 //let formulario = document.querySelector("form");
 
 //regex:
-let regexN = /^[A-Za-z]\D*$/gm;
 let regexPrecio = /^[1-9][0-9]*$/;
 let regexNum = /^[1-9][0-9]?$/;
 
@@ -42,12 +42,12 @@ formularioAlta.addEventListener("submit", (event)=>{
   let imagen = event.target[7].value;
 
   //console.log para probar que tome bien los valores ingresados
-  //console.log(imagen);
+  //console.log(personaje);
 
 
 
                        //---[0]Personaje---//
-  //chequea que se haya ingresado el nombre
+  //chequea que se haya ingresado el nombre + funcion limpiar
   if (personaje !== ""){
     personaje = limpiar(personaje);
     errorPersonaje.textContent = "";
@@ -59,7 +59,7 @@ formularioAlta.addEventListener("submit", (event)=>{
 
 
                        //---[1]Franquicia---//
-  //se chequea que se haya ingresado la franquicia o la serie/prlicula a la que pertenece
+  //se chequea que se haya ingresado la franquicia o la serie/prlicula a la que pertenece + funcion limpiar
   if (franquicia !== ""){
     franquicia = limpiar(franquicia);
     errorFranquicia.textContent = "";
@@ -71,7 +71,7 @@ formularioAlta.addEventListener("submit", (event)=>{
 
 
                        //---[2]Marca---//
-  //se chequea que se haya ingresado la marca
+  //se chequea que se haya ingresado la marca + funcion limpiar
   if (marca !== ""){
     marca = limpiar(marca);
     errorMarca.textContent = "";
@@ -144,7 +144,7 @@ formularioAlta.addEventListener("submit", (event)=>{
     errorImagen.textContent = "Agregue la imagen del producto";
   }
 
-  //console.log(personaje,franquicia,marca,escala,precio,stock);
+  console.log(personaje,franquicia,marca,escala,precio,stock, descripcion);
 })
 
 
@@ -171,22 +171,22 @@ function validarStock(inputValue) {
 }
 
 function limpiar(inputValue) {
-    let valorLimpio = inputValue.trim();
-  
-    if(valorLimpio[0] === valorLimpio[0].toUpperCase()) {
-      return valorLimpio
-    }
-  
-    else {
-      let valorReconstruido = "";
-      for(let i = 0; i < valorLimpio.length; i++){
-        if(i == 0) {
-          valorReconstruido += valorLimpio[i].toUpperCase();
-        }
-        else {
-          valorReconstruido += valorLimpio[i].toLowerCase();
-        }
+  let valorLimpio = inputValue.trim();
+
+  if(valorLimpio[0] === valorLimpio[0].toUpperCase()) {
+    return valorLimpio
+  }
+
+  else {
+    let valorReconstruido = "";
+    for(let i = 0; i < valorLimpio.length; i++){
+      if(i == 0) {
+        valorReconstruido += valorLimpio[i].toUpperCase();
       }
-      return valorReconstruido;
+      else {
+        valorReconstruido += valorLimpio[i].toLowerCase();
+      }
     }
+    return valorReconstruido;
+  }
 }
