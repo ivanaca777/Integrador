@@ -180,7 +180,6 @@ footer a {
 
 @media (max-width: 720px) {
   section {
-    margin: 10%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -194,14 +193,14 @@ footer a {
     box-shadow: 0 5px 15px black;
   }
   section article img {
-    width: 40%;
+    width: 30%;
     margin: 5% 3% 5% 5%;
     border-radius: 10px;
   }
   section article div {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     height: 100%;
     text-align: center;
     align-items: center;
@@ -216,10 +215,13 @@ footer a {
     width: 90%;
     margin: 0;
   }
+  section article div .datos {
+    margin: 10px 0 0 0;
+  }
   section article div .precio {
     font-size: 20px;
     font-weight: bolder;
-    margin-top: 10px;
+    margin: 10px 0px 0 0;
     padding: 5px;
     font-family: "Bitter", serif;
     text-align: center;

@@ -2,6 +2,8 @@
 
 @import '_h-colores.scss';
 
+
+//card dispositivos móviles
 @mixin card {
         border-radius: 20px;
         background-color: $green;
@@ -10,9 +12,8 @@
         align-items: center;
         box-shadow: 0 5px 15px black;
     
-    
         & img {
-            width: 40%;
+            width: 30%;
             margin: 5% 3% 5% 5%;
             border-radius: 10px;
         }
@@ -20,7 +21,7 @@
         & div {
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 60%;
             height: 100%;
             text-align: center;
             align-items: center;
@@ -35,11 +36,15 @@
                 width: 90%;
                 margin: 0;
             }
-        
+            
+            & .datos {
+                margin:10px 0 0 0;
+            }
+
             & .precio {
                 font-size: 20px;
                 font-weight: bolder;
-                margin-top: 10px;
+                margin: 10px 0px 0 0;
                 padding: 5px;
                 font-family: 'Bitter', serif;
                 text-align: center;
@@ -63,6 +68,7 @@
         }
 }
 
+//card desktop
 @mixin card2 {
     border-radius: 20px;
     background-color: $green;

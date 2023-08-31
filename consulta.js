@@ -96,7 +96,7 @@ function openMenu() {
       errorTipoConsulta.textContent = "";
     }
     else {
-      errorTipoConsulta.textContent = "Por favor elija una opción";
+      errorTipoConsulta.textContent = "Debe elejir una opción";
     }
   
   
