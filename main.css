@@ -283,6 +283,9 @@ footer a {
     width: 5%;
     margin: 0 0 0 20px;
   }
+  main form div {
+    color: red;
+  }
   main form .enviar {
     width: 20%;
     margin-left: 40%;
@@ -413,8 +416,9 @@ footer a {
   }
   main form div {
     color: red;
-    text-align: left;
-    margin: 0 230px 0 0;
+    text-align: center;
+    margin: 0;
+    width: 100%;
   }
   main form .enviar {
     width: 130px;

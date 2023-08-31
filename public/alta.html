@@ -32,26 +32,34 @@
 
     <main class="principala">
         <h2>Agregar producto nuevo</h3>
-        <form action="">
+        <form name="formularioAlta">
             <label class="label" for="personaje">Nombre personaje:<input name="personaje" type="text"/></label>
+            <div class="errorPersonaje"></div>
         
             <label class="label" for="franquicia">Franquicia/Serie:<input name="franquicia" type="text"/></label>
+            <div class="errorFranquicia"></div>
 
             <label class="label" for="marca">Marca:<input name="marca" type="text"/></label>
+            <div class="errorMarca"></div>
             
             <label class="escala" for="escala">Escala:
-                <label for="escalas">1/5</label><input class="radio" name="escala" type="radio"/>
-                <label for="escalas">1/10</label><input class="radio" name="escala" type="radio"/>
-                <label for="escalas">1/20</label><input class="radio" name="escala" type="radio"/>
+                <label for="escalas">1/5</label><input class="radio" name="escala" type="radio" value="1/5"/>
+                <label for="escalas">1/10</label><input class="radio" name="escala" type="radio" value="1/10"/>
+                <label for="escalas">1/20</label><input class="radio" name="escala" type="radio" value="1/20"/>
             </label>
+            <div class="errorEscala"></div>
 
             <label class="label" for="precio">Precio:<input name="precio" type="text"/></label>
+            <div class="errorPrecio"></div>
 
             <label class="label" for="stock">Unidades agregadas a Stock:<input name="stock" type="text"/></label>
+            <div class="errorStock"></div>
         
-            <label class="label" for="descripcion">Descripción:<textarea class="descripcion" name="descripcion"></textarea></label>        
+            <label class="label" for="descripcion">Descripción:<textarea class="descripcion" name="descripcion"></textarea></label>
+            <div class="errorDescripcion"></div>  
         
             <label class="label" for="imagen">Imagen:<input name="imagen" type="file" accept="image/*"/></label>
+            <div class="errorImagen"></div>
 
             <input class="agregar" type="submit" value="Agregar">
         </form>
@@ -64,6 +72,6 @@
         </a>
     </footer>   
     <script src="https://kit.fontawesome.com/eb26cc3c54.js" crossorigin="anonymous"></script> 
-    <script src="../script.js"></script>
+    <script src="../alta.js"></script>
 </body>
 </html>

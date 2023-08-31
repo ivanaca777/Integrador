@@ -32,7 +32,7 @@
 
     <main class="principalc">
         <h2>Realiza tu consulta:</h3>
-        <form name="formulario">
+        <form name="formularioConsulta">
             <label class="label" id="nombre" for="Nombre">Nombre:
             <input name="Nombre" type="text"/></label>
             <div class="errorNombre"></div>
@@ -43,19 +43,23 @@
             
             <label class="label" for="Mail">Mail:
             <input name="Mail" type="text" placeholder="ejemplo@gmail.com"/></label>
+            <div class="errorMail"></div>
 
             <label class="label" for="tipo de consulta">Motivo de su consulta:<br>
                 <select name="tipoconsulta" class="select">
-                    <option value="opcion1">Formas de pago</option>
-                    <option value="opcion2">Garantía</option>
-                    <option value="opcion3">Productos</option>
-                    <option value="opcion3">Envío</option>
-                    <option value="opcion">Otros</option>
+                    <option value="Elija una opción">Elija una opción</option>
+                    <option value="Formas de pago">Formas de pago</option>
+                    <option value="Garantía">Garantía</option>
+                    <option value="Productos">Productos</option>
+                    <option value="Envío">Envío</option>
+                    <option value="Otros">Otros</option>
                 </select>
             </label>
+            <div class="errorTipoConsulta"></div>
 
             <label class="label" for="descripcion">Comentarios:<br>
             <textarea class="descripcion" name="descripcion"placeholder="Ingrese su mensaje"></textarea></label>
+            <div class="errorConsulta"></div>
 
             <input class="enviar" type="submit" value="Enviar">
         </form>
@@ -68,6 +72,6 @@
         </a>
     </footer>   
     <script src="https://kit.fontawesome.com/eb26cc3c54.js" crossorigin="anonymous"></script> 
-    <script src="../script.js"></script>
+    <script src="../consulta.js"></script>
 </body>
 </html>
